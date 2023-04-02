@@ -44,10 +44,10 @@ public:
     void addPicture(Picture pic);
 
 private:
-    /// @brief Число строк
+    /// @brief Число строк канваса
     size_t rows;
     
-    /// @brief Число столбцов
+    /// @brief Число столбцов канваса
     size_t cols;
     
     /// @brief Вектор изображений
