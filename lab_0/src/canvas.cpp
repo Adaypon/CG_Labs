@@ -8,8 +8,8 @@ Canvas::Canvas(size_t cols, size_t rows) :
 }
 
 void Canvas::draw() {
-    std::cout << "[canvas] Drawing next picture..." << std::endl;
     for (auto picture : pictures) {
+        std::cout << "[canvas] Drawing next picture..." << std::endl;
         picture.generatePicture();
         for (auto strLine : picture.getPicture()) {
             std::cout << strLine << "\n";
