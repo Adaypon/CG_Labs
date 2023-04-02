@@ -1,6 +1,8 @@
 #include "picture.hpp"
 
-Picture::Picture(size_t cols, size_t rows) {
+Picture::Picture(size_t cols, size_t rows) :
+    cols(cols), rows(rows)
+{
     picture.resize(rows);
     for (size_t row = 0; row < rows; ++row) {
         picture[row].resize(cols, ' ');
@@ -11,7 +13,9 @@ void Picture::generatePicture() {
     std::cout << "[picture] Generating picture from added items" << std::endl;
     for (auto item : items) {
         for (auto coord : item->getPoints()) {
-            picture[coord.y][coord.x] = coord.symb;
+            if (coord.x < cols && coord.y < rows) {
+                picture[coord.y][coord.x] = coord.symb;
+            }
         }
     }
 }

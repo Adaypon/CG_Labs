@@ -37,6 +37,12 @@ private:
 	std::vector<Item*> items;
     /// @brief Матрица "пикселей" (вектор строк)
     std::vector<std::string> picture;
+
+    /// @brief Число строк изображения
+    size_t rows;
+    
+    /// @brief Число столбцов изображения
+    size_t cols;
 };
 
 #endif // __PICTURE_H__
