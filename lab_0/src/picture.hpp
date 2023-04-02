@@ -8,6 +8,7 @@
 #include "point.hpp"
 #include "item.hpp"
 #include "line.hpp"
+#include "circle.hpp"
 
 class Canvas;
 
