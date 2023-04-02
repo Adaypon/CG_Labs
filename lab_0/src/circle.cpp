@@ -45,7 +45,7 @@ std::vector<Point> Circle::calcBresenhamCircleAlgorithm(const Point p0, const in
 
 std::vector<Point> Circle::getPoints()
 {
-    std::cout << "[line] getPoints()" << std::endl;
+    std::cout << "[circle] getPoints()" << std::endl;
     itemPoints = calcBresenhamCircleAlgorithm(itemCoords[0], radius);
     return itemPoints;
 }
