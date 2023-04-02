@@ -2,7 +2,6 @@
 
 #include "canvas.hpp"
 
-// TODO Если изображение выходит за край канваса, отображать только часть 
 
 int main() {
     Canvas canvas{100, 20};
