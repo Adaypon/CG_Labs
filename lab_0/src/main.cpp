@@ -4,7 +4,7 @@
 
 
 int main() {
-    Canvas canvas{100, 20};
+    Canvas canvas{100, 30};
     Picture pic1(canvas.colsCount(), canvas.rowsCount());
     
     Line line{{{1, 5}, {78, 19}}};
@@ -12,6 +12,9 @@ int main() {
     
     Circle c({{50, 10}}, 8);
     pic1.addItem(&c);
+
+    Triangle t({{0, 0}, {25, 0}, {0, 16}});
+    pic1.addItem(&t);
     
     canvas.addPicture(pic1);
     canvas.draw();

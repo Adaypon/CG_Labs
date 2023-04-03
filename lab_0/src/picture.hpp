@@ -9,6 +9,7 @@
 #include "item.hpp"
 #include "line.hpp"
 #include "circle.hpp"
+#include "triangle.hpp"
 
 class Canvas;
 
