@@ -45,8 +45,6 @@ std::vector<Point> Triangle::getPoints()
     }
     else {
         for (auto side : sideLines) {
-            auto tmp = side.getPoints().size();
-            int a = 10;
             for (auto sidePoint : side.getPoints()) {
                 itemPoints.push_back(sidePoint);
             }
