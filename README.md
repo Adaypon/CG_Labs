@@ -5,3 +5,4 @@ Table of contents
 =================
 
 * Lab 0 - Bresenham's drawing algorithm implementation
+* Lab 1 - Simple animated scene
